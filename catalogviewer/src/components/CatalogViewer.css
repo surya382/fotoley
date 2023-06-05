@@ -65,6 +65,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      margin-left: 5px;
   }
  .arrow{
     cursor: pointer;
@@ -93,4 +94,5 @@ body {
     .bottomImg{
         width: 100%;
     }
+    
   }

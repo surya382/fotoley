@@ -57,16 +57,20 @@ const Catalog = () => {
           </div>
 
           <div className="" style={{display:"flex",gap:"5px",width:"100%"}}>
+           
             {images.map((imag, i) => (
-              <img 
+                <div  key={i} style={{width:"20%",height:"80%"}}>
+                   <img 
                 className={currentIndex==i?"active":"imagess"}
-                width="100%"            
-                key={i}
+                width="100%" 
+                height="100%"           
                 src={imag.src}
                 alt={imag.caption}
                 onClick={() => handleThumbnailClick(i)}
               />
+              </div>
             ))}
+            
           </div>
 
           <div className="arrowcont"  onClick={handleNext}>
